@@ -7,6 +7,9 @@ import (
 func main() {
 	fmt.Println("Hello Car Rental Gateway")
 
-	Create("CAR_RENTAL_GATEWAY")
+	fmt.Println("Ryanair Bookings:")
+	RetrieveBookings("Ryanair")
+	fmt.Println("Expedia Bookings:")
+	RetrieveBookings("Expedia")
 
 }

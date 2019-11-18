@@ -22,11 +22,13 @@ CREATE TABLE BOOKING (
 INSERT INTO BOOKING (distributor_id, booking_name, location)
 VALUES (1, "car rental A", "Tartu");
 INSERT INTO BOOKING (distributor_id, booking_name, location)
+VALUES (1, "car rental C", "Parnu");
+INSERT INTO BOOKING (distributor_id, booking_name, location)
 VALUES (2, "car rental B", "Tallinn");
 
-CREATE VIEW RyanairEmployees AS
+CREATE VIEW RyanairBooking AS
 SELECT * FROM BOOKING WHERE distributor_id = 1;
-CREATE VIEW ExpediaEmployees AS
+CREATE VIEW ExpediaBooking AS
 SELECT * FROM BOOKING WHERE distributor_id = 2;
 
 DROP DATABASE IF EXISTS USA_CUSTOMER;
