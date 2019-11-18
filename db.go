@@ -12,18 +12,5 @@ func Create(name string) {
 	}
 	defer db.Close()
 
-	_,err = db.Exec("CREATE DATABASE IF NOT EXISTS " + name)
-	if err != nil {
-		panic(err)
-	}
 
-	_,err = db.Exec("USE "+name)
-	if err != nil {
-		panic(err)
-	}
-
-	_,err = db.Exec("CREATE TABLE example ( id integer, data varchar(32) )")
-	if err != nil {
-		panic(err)
-	}
 }
