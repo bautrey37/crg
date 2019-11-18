@@ -9,7 +9,7 @@ Create a user `admin:admin` with DBA privileges
  
 
 
-###Building and Running:
+### Building and Running:
  - `go get github.com/go-sql-driver/mysql`
  - `go build`
  - `go install crg`
