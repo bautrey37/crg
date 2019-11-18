@@ -15,5 +15,4 @@
 # vendor/
 
 # JetBrains project settings
-.idea/
-
+/.idea
