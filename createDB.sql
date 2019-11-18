@@ -1,0 +1,20 @@
+DROP DATABASE IF EXISTS CARRENTALGATEWAY;
+CREATE DATABASE CARRENTALGATEWAY;
+CREATE SCHEMA CRG;
+
+CREATE TABLE BOOKING (
+    booking_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    distributor_id INT(6),
+    name VARCHAR(30)
+)
+
+-- CREATE DATABASE USA_CUSTOMER;
+
+-- CREATE TABLE USER (
+--     user_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+--     full_name VARCHAR(30) NOT NULL,
+--     home_address VARCHAR(30),
+--     email_address VARCHAR(50),
+--     date_of_birth TIMESTAMP,
+--     telephone_number VARCHAR(10)
+-- )
